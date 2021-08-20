@@ -19,6 +19,8 @@ func Querying(t sdkInit.Application, args []string) (string, error) {
 }
 
 func main() {
+	// jeweler string, paperNumber string
+	args := []string{"QueryPaper", "jeweler01", "002"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{
@@ -69,10 +71,9 @@ func main() {
 	}
 	fmt.Println(">> 设置链码状态完成")
 
-	args := []string{"QueryPaper", "jeweler01", "001"}
 	ret, err := Querying(App, args)
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("<--- 添加信息　--->：", ret)
+	fmt.Println("<--- 查询信息　--->：", ret)
 }

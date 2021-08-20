@@ -10,17 +10,17 @@ import (
 
 var App sdkInit.Application
 
-func Applying(t sdkInit.Application, args []string) (string, error) {
-	response, err := t.SdkEnvInfo.Client.Execute(channel.Request{ChaincodeID: t.SdkEnvInfo.ChaincodeID, Fcn: args[0], Args: [][]byte{[]byte(args[1]), []byte(args[2]), []byte(args[3]), []byte(args[4])}})
+func Repurchasing(t sdkInit.Application, args []string) (string, error) {
+	response, err := t.SdkEnvInfo.Client.Execute(channel.Request{ChaincodeID: t.SdkEnvInfo.ChaincodeID, Fcn: args[0], Args: [][]byte{[]byte(args[1]), []byte(args[2]), []byte(args[3])}})
 	if err != nil {
-		return "", fmt.Errorf(">>failed to apply: %v", err)
+		return "", fmt.Errorf(">>failed to repurchase: %v", err)
 	}
 	return string(response.Payload), nil
 }
 
 func main() {
-	// paperNumber string, jeweler string, applyDateTime string, financingAmount int
-	args := []string{"Apply", "003", "jeweler01", "2021/8/19", "1000"}
+	// jeweler string, paperNumber string, repurchaseDateTime string
+	args := []string{"Repurchase", "jeweler01", "002", "2021/08/19"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{
@@ -71,7 +71,7 @@ func main() {
 	}
 	fmt.Println(">> 设置链码状态完成")
 
-	ret, err := Applying(App, args)
+	ret, err := Repurchasing(App, args)
 	if err != nil {
 		fmt.Println(err)
 	}

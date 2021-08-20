@@ -19,6 +19,8 @@ func Receiving(t sdkInit.Application, args []string) (string, error) {
 }
 
 func main() {
+	// jeweler string, bank string, paperNumber string, receiveDateTime string
+	args := []string{"Receive", "jeweler01", "bank01", "003", "2021/8/20"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{
@@ -69,7 +71,6 @@ func main() {
 	}
 	fmt.Println(">> 设置链码状态完成")
 
-	args := []string{"Receive", "jeweler01", "bank01", "001", "2021/8/20"}
 	ret, err := Receiving(App, args)
 	if err != nil {
 		fmt.Println(err)
