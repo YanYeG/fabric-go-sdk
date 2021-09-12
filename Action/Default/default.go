@@ -20,7 +20,7 @@ func Defaulting(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, paperNumber string
-	args := []string{"Default", "jeweler01", "002"}
+	args := []string{"Default", "jeweler01", "003"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

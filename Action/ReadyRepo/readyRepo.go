@@ -20,7 +20,7 @@ func ReadyRepoing(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, paperNumber string, repurchaser string, readyDateTime string
-	args := []string{"ReadyRepo", "jeweler01", "002", "repurchaser01", "2021/8/20"}
+	args := []string{"ReadyRepo", "jeweler01", "003", "repurchaser01", "2021/8/21"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

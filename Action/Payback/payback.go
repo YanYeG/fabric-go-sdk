@@ -20,7 +20,7 @@ func Paybacking(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, paperNumber string, paidbackDateTime string
-	args := []string{"Payback", "jeweler01", "002", "2022/8/20"}
+	args := []string{"Payback", "jeweler01", "003", "2022/8/20"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

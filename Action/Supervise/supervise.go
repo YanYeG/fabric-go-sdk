@@ -20,7 +20,7 @@ func Supervising(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, supervisor string, endDate string, paperNumber string
-	args := []string{"Supervise", "jeweler01", "supervisor01", "2022/01/01", "002"}
+	args := []string{"Supervise", "jeweler01", "supervisor01", "2021/08/21", "003"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

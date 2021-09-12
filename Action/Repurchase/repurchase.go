@@ -20,7 +20,7 @@ func Repurchasing(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, paperNumber string, repurchaseDateTime string
-	args := []string{"Repurchase", "jeweler01", "002", "2021/08/19"}
+	args := []string{"Repurchase", "jeweler01", "003", "2022/12/19"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

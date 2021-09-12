@@ -20,7 +20,7 @@ func Applying(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// paperNumber string, jeweler string, applyDateTime string, financingAmount int
-	args := []string{"Apply", "003", "jeweler01", "2021/8/19", "1000"}
+	args := []string{"Apply", "003", "jeweler01", "2021/8/21", "1000"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

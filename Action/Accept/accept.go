@@ -20,7 +20,7 @@ func Accepting(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, paperNumber string, acceptDateTime string
-	args := []string{"Accept", "jeweler01", "002", "2021/8/20"}
+	args := []string{"Accept", "jeweler01", "003", "2021/8/21"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{

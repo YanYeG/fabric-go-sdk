@@ -20,7 +20,7 @@ func Evaluating(t sdkInit.Application, args []string) (string, error) {
 
 func main() {
 	// jeweler string, paperNumber string, evaluator string, evalDateTime string
-	args := []string{"Evaluate", "jeweler01", "002", "evaluator01", "2021/8/20"}
+	args := []string{"Evaluate", "jeweler01", "003", "evaluator01", "2021/8/21"}
 
 	orgs := []*sdkInit.OrgInfo{
 		{
